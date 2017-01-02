@@ -6,15 +6,13 @@
   	<link rel="Stylesheet" type="text/css" href="./po-look.css"/>
   </h:head>
   <h:body>
-   <p> managed bean:</p>
-    #{helloController.showHello()}
     <div id="menu">
 		<ul id="nav-bar">
 			<li><a href="https://procesos.intec.edu.do/">Pagina Principal</a></li>
 			<li><a href="https://procesos.intec.edu.do/">Pensum Original</a></li>
 			<li><a id="org" href="https://procesos.intec.edu.do/">Organizar Pensum</a></li>
 			<li id="user">
-				<a href="https://procesos.intec.edu.do/">#{helloController.Name()} #{helloController.Last()}</a>
+				<a href="https://procesos.intec.edu.do/">#{UserBean.getFirstName()} #{UserBean.getLastName()}</a>
 				<div id="dropdown-content">
     					<a href="#">Log Out</a>
 				</div>
